@@ -33,8 +33,7 @@ namespace UserManagement.Repository
 
         public Person Get(string NIK)
         {
-            Person persons = new Person();
-            persons = conn.Persons.Find(NIK);
+            var persons = conn.Persons.Find(NIK);
             return persons;
         }
 
